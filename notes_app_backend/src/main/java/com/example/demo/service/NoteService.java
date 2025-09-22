@@ -1,10 +1,10 @@
-package com.example.notesappbackend.service;
+package com.example.demo.service;
 
 import com.example.notesappbackend.dto.NoteRequest;
 import com.example.notesappbackend.dto.NoteResponse;
-import com.example.notesappbackend.mapper.NoteMapper;
+import com.example.demo.mapper.NoteMapper;
 import com.example.notesappbackend.model.Note;
-import com.example.notesappbackend.repository.NoteRepository;
+import com.example.demo.repository.NoteRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

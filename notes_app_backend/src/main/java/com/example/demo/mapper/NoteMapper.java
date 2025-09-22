@@ -1,8 +1,8 @@
-package com.example.notesappbackend.mapper;
+package com.example.demo.mapper;
 
-import com.example.notesappbackend.dto.NoteRequest;
-import com.example.notesappbackend.dto.NoteResponse;
-import com.example.notesappbackend.model.Note;
+import com.example.demo.dto.NoteRequest;
+import com.example.demo.dto.NoteResponse;
+import com.example.demo.model.Note;
 
 /**
  * Ocean Professional: Mapper between Note entity and DTOs.

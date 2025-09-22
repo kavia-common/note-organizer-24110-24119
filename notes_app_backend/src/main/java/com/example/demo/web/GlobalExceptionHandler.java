@@ -1,6 +1,6 @@
-package com.example.notesappbackend.web;
+package com.example.demo.web;
 
-import com.example.notesappbackend.service.ResourceNotFoundException;
+import com.example.demo.service.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

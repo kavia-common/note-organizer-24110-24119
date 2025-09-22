@@ -2,7 +2,7 @@ package com.example.notesappbackend.web;
 
 import com.example.notesappbackend.dto.NoteRequest;
 import com.example.notesappbackend.dto.NoteResponse;
-import com.example.notesappbackend.service.NoteService;
+import com.example.demo.service.NoteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

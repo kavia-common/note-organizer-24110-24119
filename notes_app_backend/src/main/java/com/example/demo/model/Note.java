@@ -1,4 +1,4 @@
-package com.example.notesappbackend.model;
+package com.example.demo.model;
 
 import jakarta.persistence.*;
 import java.time.OffsetDateTime;
