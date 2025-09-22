@@ -6,31 +6,38 @@ import org.springframework.web.servlet.view.RedirectView;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+/**
+ * Ocean Professional: Minimal root endpoints to assist navigation and health.
+ */
 @RestController
-@Tag(name = "Hello Controller", description = "Basic endpoints for notesappbackend")
+@Tag(name = "System", description = "System endpoints for navigation and health checks")
 public class HelloController {
-    
+
+    // PUBLIC_INTERFACE
     @GetMapping("/")
-    @Operation(summary = "Welcome endpoint", description = "Returns a welcome message")
+    @Operation(summary = "Welcome", description = "Returns a simple welcome message for the API.")
     public String hello() {
-        return "Hello, Spring Boot! Welcome to notesappbackend";
+        return "Notes API (Ocean Professional): Welcome.";
     }
-    
+
+    // PUBLIC_INTERFACE
     @GetMapping("/docs")
-    @Operation(summary = "API Documentation", description = "Redirects to Swagger UI")
+    @Operation(summary = "OpenAPI Docs", description = "Redirects to Swagger UI for interactive API documentation.")
     public RedirectView docs() {
         return new RedirectView("/swagger-ui.html");
     }
-    
+
+    // PUBLIC_INTERFACE
     @GetMapping("/health")
-    @Operation(summary = "Health check", description = "Returns application health status")
+    @Operation(summary = "Health check", description = "Quick application health status.")
     public String health() {
         return "OK";
     }
-    
+
+    // PUBLIC_INTERFACE
     @GetMapping("/api/info")
-    @Operation(summary = "Application info", description = "Returns application information")
+    @Operation(summary = "Application info", description = "Returns application information.")
     public String info() {
-        return "Spring Boot Application: notesappbackend";
+        return "Spring Boot Application: notesappbackend (Notes API)";
     }
-} 
+}
